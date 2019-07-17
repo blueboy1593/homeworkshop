@@ -6,9 +6,91 @@ mutable:
 
 list, set, dictionary
 
+set은 for문으로 가져올 수 있다.
+
+```python
+>>> my_set = {3, 1, 6, 9, 1, 3}
+>>> my_set
+{1, 3, 6, 9}
+>>> my_set[1]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'set' object is not subscriptable
+>>> my_set(1)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'set' object is not callable
+>>> my_set{2}
+  File "<stdin>", line 1
+    my_set{2}
+          ^
+SyntaxError: invalid syntax
+>>> list(my_set[1])
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'set' object is not subscriptable
+>>> for i in my_set:
+...     print(i)
+...
+1
+3
+6
+9
+```
+
+```python
+>>> my_dict = {
+...     '짬뽕': '11', '짜장': 2
+... }
+>>> my_dict
+{'짬뽕': '11', '짜장': 2}
+>>> my_dict['짬뽕'] = 10
+>>> my_dict
+{'짬뽕': 10, '짜장': 2}
+>>>
+```
+
+
+
 immutable:
 
 string, tuple, range
+
+```python
+>>> x = 'Hello World'
+>>> print(x[0])
+H
+>>> print(x[3])
+l
+>>> x[1] = t
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 't' is not defined
+```
+
+```python
+>>> my_tuple = (1, 2, 3)
+>>> my_tuple[0]
+1
+>>> my_tuple[0] = 5
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'tuple' object does not support item assignment
+    
+>>> my_range = range(5)
+>>> my_range
+range(0, 5)
+>>> my_range[2]
+2
+>>> my_range[4]
+4
+>>> my_range[4] = 6
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'range' object does not support item assignment
+```
+
+직접 파이썬에서 해보면 답이 나온다.
 
 ## Problem 2
 
@@ -37,3 +119,4 @@ for i in name_list:
 print(dict)
 ```
 
+list[-1]을 하면 마지막 인덱스를 보여준다.

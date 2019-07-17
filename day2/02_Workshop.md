@@ -22,6 +22,8 @@ for i in range(m):
 som = 0 # 합을 명시
 ave = 0 # 평균점수
 student = {'python': 80, 'algorithm': 99, 'django': 89, 'flask': 83}
+sum(student.values())
+351
 for value in student.values():
     som += value
 people_num = len(student)

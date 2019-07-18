@@ -22,5 +22,38 @@ def palindrome(user_word):
 print(palindrome(user_word))
 ```
 
-![aafad](C:\Users\student\Desktop\aafad.PNG)
+```
+student@M702 MINGW64 ~/development/homeworkshop/day3 (master)
+$ python 03_review.py
+단어를 입력하세요 : 00700
+True
+
+student@M702 MINGW64 ~/development/homeworkshop/day3 (master)
+$ python 03_review.py
+단어를 입력하세요 : abeshit
+False
+```
+
+
+
+Code by 신영훈
+
+```python
+def palindrome(word):
+    return True if list(word) == list(reversed((word))) else False
+# reversed 사용.
+```
+
+Code by Jason
+
+```python
+def palidrome(word):
+    return word == word[::-1]
+
+# 슬라이싱을 거꾸로 하는 것. 
+```
+
+
+
+
 

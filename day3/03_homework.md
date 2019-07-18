@@ -56,11 +56,17 @@ result = my_func(4,7)
 ...     c = a + b
 ...     print(c)
 ...
->>> result = my_func(4,7)
+>>> result = my_func(4, 7)
 11
+>>> result
+>>> result
 ```
 
-my_func(a,b)라는 함수를 통하여 result의 값은 4 + 7로 저장된다.
+my_func(a,b)라는 함수를 통하여 result의 출력물은 4+7인 11이 된다.
+
+하지만, 함수에서는 return이 있어야 값이 저장되고 print함수로 value의 저장은 되지 않는다.
+
+따라서 result를 입력했을 때, 값이 출력되지 않는 것을 볼 수 있다.
 
 
 

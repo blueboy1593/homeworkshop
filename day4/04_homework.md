@@ -27,6 +27,9 @@
 ```python
 def hamsu():
     return a, b
+
+return '', 200
+이런식으로 반환한 적도 있다.
 ```
 
 를 입력해도 오류나지 않는다.
@@ -35,7 +38,25 @@ def hamsu():
 
 3) True
 
+```python
+def add_two(x):
+    return x + 2
+# x는 매개변수(parameter)
+
+add_two(2)
+# 2는 전달인자(argument)
+```
+
 4) True
+
+```python
+def print(*objects)
+
+print('a', 'ab')
+# 튜플로 나오는 것을 확인할 수 있다.
+```
+
+
 
 ## Problem3
 
